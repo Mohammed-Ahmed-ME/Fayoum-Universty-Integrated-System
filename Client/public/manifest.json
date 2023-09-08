@@ -1,0 +1,9 @@
+{
+  "name": "Fayoum University UI",
+  "short_name": "Mohammed Ahmed",
+  "description": "Description of your app",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.login-box input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 1) inset !important;
+    color: inherit !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+    font-weight: 400;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:1em;
+    color: white;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    top:10px;
+    color: white;
+    font-size: 1.2em;
+    line-height:57px;
+}
+.LoginButton{
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 900;
+}
+.LoginButton:hover{
+    color: black;
+    background-color: lightblue;
+}
+.color-text {
+    position: absolute;
+    top: 150px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: white;
+    animation: moveAndChangeColor 10s linear infinite;
+}
+.color-text-h {
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: white;
+    animation: moveAndChangeColor 15s linear infinite;
+}.color-text-h2 {
+     transform: translateY(-50%);
+     font-size: 1.8em;
+     color: white!important;
+     animation: moveAndChangeColor 15s linear infinite;
+ }
+.P-style{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: .9em;
+}
+.P-style:hover{
+    color: lightblue;
+}
+@keyframes moveAndChangeColor {
+    0% {
+        color: #0080ff;
+    }
+    33% {
+        color: #a7fde1;
+    }
+    66% {
+        color: #1c6ee8;
+    }
+    100% {
+        color: #8f8fea;
+    }
+}
+
+@media (max-width: 762px){
+    .color-text-h{
+        font-size: 1.2em;
+    }
+}
